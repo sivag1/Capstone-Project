@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity
         BackendDataFacade.update(this, false, null);
 
         juiceLevelList.clear();
-        //BackendDataFacade.fetchJuiceLevels(this, juiceLevelList);
+        BackendDataFacade.fetchJuiceLevels(this, juiceLevelList);
         //dp.notifyDataSetChanged();
 
         String deviceId = Utility.getDeviceId(this);
