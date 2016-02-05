@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JuiceBoard</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_device">Add this device</string>
+    <string name="title_activity_activate_me">Add this Device</string>
+    <string name="custom_device">How do you want to call this Device?</string>
+    <string name="hint">My Android</string>
+    <string name="changeable_in_settings">You can always change later in Settings!</string>
+    <string name="saved">Saved successfully...</string>
+    <string name="empty_text">No devices to track. \n Add this one by pressing button in top.</string>
+    <string name="sync_account_type">juiceboard.sivag1.com</string>
+    <string name="content_authority">com.sivag1.juiceboard</string>
+    <string name="notif_title">Low battery for your device(s)</string>
+    <string name="welcome_signin">Sign-in to continue!</string>
+    <string name="welcome_signin1">Welcome</string>
+    <string name="site">http://www.sivag1.com</string>
+    <string name="login_error_toast">Some error happened, try again!</string>
+    <string name="logoff">Logoff</string>
+    <string name="logoff_summary">This device will not be tracked</string>
+    <string name="disconnect">Disconnect account from this App</string>
+    <string name="disconnect_summary">All your data will be deleted</string>
+    <string name="model">Model</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

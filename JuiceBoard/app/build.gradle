@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.sivag1.juiceboard"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "0.1"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(project.property("MyProject.signing") + ".keystore")
+            storePassword "test"
+            keyAlias "MyAlias"
+            keyPassword "test"
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/Parse-1.7.1.jar')
+    compile 'com.google.android.gms:play-services:6.1.+'
+    compile 'com.android.support:support-v4:23.0.0'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile files('libs/splunk-mint-4.0.4.jar')
+    compile 'com.android.support:design:23.0.1'
+    compile 'nl.qbusict:cupboard:2.1.4'
+}
